@@ -199,6 +199,11 @@ h1, h2, h3 {
 .doc-list a:hover { color: var(--accent); }
 
 /* Tables */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 table.files, table.grades {
   width: 100%;
   border-collapse: collapse;
@@ -280,6 +285,45 @@ table.files td.week-num {
   .span-2 { grid-column: 1; }
   .site-header { padding: 28px 20px 0; }
   .page { padding: 24px 20px 48px; }
+}
+
+@media (max-width: 640px) {
+  html, body { font-size: 15px; }
+  .site-header { padding: 22px 16px 0; }
+  .page { padding: 20px 16px 40px; gap: 16px; }
+  .grid { gap: 16px; }
+  .card { padding: 20px 18px; border-radius: 14px; }
+  .card h2 { font-size: 1.55rem; margin-bottom: 12px; }
+  .lede { font-size: 0.95rem; }
+  .info-card { padding: 14px 16px; font-size: 13px; }
+  .pillnav {
+    margin-top: 18px;
+    padding-bottom: 16px;
+    gap: 8px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .pillnav::-webkit-scrollbar { display: none; }
+  .pillnav a {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  table.files, table.grades { font-size: 13px; min-width: 560px; }
+  table.files th, table.grades th,
+  table.files td, table.grades td { padding: 10px 12px; }
+  .contact-form input,
+  .contact-form textarea { padding: 12px 14px; font-size: 16px; }
+  .contact-form .btn {
+    justify-self: stretch;
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  .btn { padding: 12px 18px; }
+  .site-footer { padding: 20px 16px; }
 }
 
 @media (max-width: 520px) {

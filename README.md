@@ -1,1 +1,1 @@
-# Site do Prof. Dr. Simas - UFMT
+# Site do Prof. Dr. Simas — Resistência dos Materiais
